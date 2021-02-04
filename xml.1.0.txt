@@ -1,0 +1,16 @@
+Must input elements be inside forms? 
+Yes?
+Find and name the EMPTY elements.
+<!ELEMENT br EMPTY>
+<!ELEMENT hr EMPTY>
+<!ELEMENT img EMPTY>
+<!ELEMENT area EMPTY>
+<!ELEMENT input EMPTY>   
+<!ELEMENT param EMPTY>  
+<!ELEMENT meta EMPTY>
+<!ELEMENT base EMPTY>
+<!ELEMENT link EMPTY>
+May a table be empty? May a tr?
+nej
+What are the possible attributes of a h2?
+<!ATTLIST h2 %attrs;>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
+
+<xsd:complexType name="booksCanon">
+    <xsd:sequence>
+        <xsd:element name="book" type="bookType" minOccurs="0"
+                maxOccurs="unbounded"/>
+    </xsd:sequence>
+</xsd:/complexType>
+
+<xsd:complexType name="book">
+    <xsd:sequence>
+        <xsd:element name="title" type="xsd:string"/>
+        <!-- a number of elements to form the sequence -->
+    </xsd:sequence>
+    <xsd:attribute name="ref" type="xsd:string"/>
+    <xsd:attribute name="mycanon" type="xsd:string"/>
+    <!-- a number of attributes -->
+</xsd:/complexType>
+
+<xsd:simpleType name="currency">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="US$"/>
+        <!-- a number of possible values -->
+    </xsd:restriction>
+</xsd:/simpleType>
+
+</xs:schema>
